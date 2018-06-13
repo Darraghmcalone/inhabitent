@@ -1,0 +1,161 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+
+/* Front page */
+
+
+h2{
+	text-align: center;
+}
+section.home-hero{ 
+background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/home-hero.jpg) no-repeat top;
+height: 100vh;
+background-size: cover;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+
+}
+
+.all-logo{
+	width: 70px;
+	height: 70px;
+	display: flex;
+	justify-content: space-around;
+}
+
+/*headers*/
+
+.inhab-head{
+	position: absolute;
+    width: 1300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    text-transform: uppercase;
+    background-color: transparent;
+
+}
+
+
+
+#site-navigation{
+	display: flex;
+	justify-content: center;
+	color: white;
+	list-style-type: none;
+	padding-top: 20px;
+}
+#site-navigation li{
+	padding-left: 1.5rem;
+}
+
+
+ul#primary-menu{
+	list-type:none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-search{
+	padding-top: 16px;
+    padding-left: 16px;
+}
+
+fieldset{
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+/*blue header*/
+
+.green-header{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.green-header a{
+	color:#248a83;
+	text-decoration: none;
+}
+.green-header li {
+ list-style-type:none;
+ }
+ /*white-header*/
+
+.white-header{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.white-header a{
+	color:white;
+	text-decoration: none;
+}
+.white-header li {
+ list-style-type:none;
+}
+
+div.home-logo{
+    display: flex;
+    justify-content: center;
+}
+
+/*product single*/
+
+article{
+    padding-top: 60px;
+}
+
+
+/* Footer */
+
+.site-footer{
+	background: url(../../images/dark-wood.png);
+
+}
+
+.flex-grid{
+	display: grid;
+    grid-template-columns: 25% 25% 50%;
+    color: white;
+    align-items: center;
+    justify-items: center;
+    width: 1180px
+}
+
+
+.flex-grid h3{
+	color: #d99054;
+}
+
+.flex-grid a{
+	color: white;
+}
+
+.copyright{    
+    color: white;
+    display: flex;
+    justify-content: center;
+ }
+
+/* Sidebar */
+
+div.sidebar{
+border-left: 2px solid #e1e1e1;
+}
+
+section.side{
+	padding-left: 3%;
+	
+	
+} 
+span.day-of-week{
+	font-weight: 700;
+}
+
+.widget-area h2{
+	display: flex;
+	font-size: 22px;
+}

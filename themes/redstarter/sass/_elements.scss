@@ -1,0 +1,424 @@
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+html {
+	box-sizing: border-box;
+	@include font-size(1);
+	
+}
+
+a {
+    color: #248a83;
+    text-decoration: none;
+}
+
+#page{
+	width: 100%;
+	margin: 0 auto;
+
+}
+body:not(.home):not(.page-template-about):not(.single-adventure) .content-area, body:not(.home):not(.page-template-about):not(.single-adventure) .widget-area{
+	
+	
+    padding-bottom: 3rem;
+}
+img{
+height: auto;
+max-width: 100% 
+}
+	
+
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+}
+
+blockquote, q {
+	quotes: "" "";
+
+	&:before,
+	&:after {
+		content: "";
+	}
+}
+
+hr {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 1px;
+	margin-bottom: $base__space-unit;
+}
+
+ul, ol {
+	
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: $base__space-unit;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 $base__space-unit $base__space-unit;
+}
+.serach-toggle{
+	display:none;
+}
+
+
+table {
+	margin: 0 0 $base__space-unit;
+	width: 100%;
+}
+
+h1{
+	font-size:39px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	clear: both;
+    font-family: Novecento Sans Web, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase
+}
+body, button, input, select, textarea{
+	color: #404040;
+    font-family: Merriweather Web, sans serif;
+    font-size: 16px;
+    line-height: 1.75
+}
+
+/* Shop Stuff */
+
+primary.content-area{
+	display: flex;
+    align-items: center;
+}
+
+.shop-categories-wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	margin-bottom: 1.5rem;
+	grid-gap: 0.5rem;
+	
+}
+
+div.shop{
+	border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    text-align: center;
+}
+
+div.shop img { 
+	height: 70px;
+	width: 70px;
+}
+
+
+.shop-category-button{
+	color: white;
+	background-color: #248a83;
+	
+}
+div.single-product-wrapper{
+	border: 1px solid #e1e1e1;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.shop-menu-wrapper{
+	padding-top: 80px;
+	border-bottom: 1px dashed #c8c8c8;
+    margin-bottom: 45px;
+}
+
+.shop-stuff li{
+	p a{
+	color: #248a83;
+    text-decoration: none;
+    font-size: x-large;
+	}
+}
+
+/*Inhabitent Journal-Front Page */
+
+.journal{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+list-style-type: none;
+padding: 0;
+}
+.journal img{
+	width: 375px;
+	height: 250px;
+}
+		
+li.list {
+	
+	border: 1px solid #e1e1e1;
+	margin: 10px;
+	bottom: 0.75 rem;
+	height: 420px;
+
+}
+h3.post-title{
+	margin-bottom: 2rem;
+}
+
+.journal-button{
+	color: black;
+	border: 1px solid;
+	padding: 0.75rem;
+}
+
+/*Shop page*/
+
+.shop-stuff li{
+
+	margin-right: 1.5rem;
+	margin-left: 1.5rem;
+	list-style-type: none;
+}
+ul.shop-stuff{
+	display: flex;
+    justify-content: center;
+    padding-right: 38px;
+}
+div.product-image-wrapper{
+	max-height: 220px;
+}
+.shop-menu-wrapper h1{
+	display:flex;
+	justify-content: center;
+}
+
+
+/* Shop Single */
+
+
+p {
+	margin:0;
+}
+
+
+/* Journal page */
+
+div#content.site-content{
+	
+
+}
+
+#journal-page{
+	display: flex;
+}
+li.posts{
+	list-style-type: none;
+}
+
+h2.post-title{
+	position: absolute;
+	font-size: 2.1rem;
+	color: white;
+	background-color: #248a83;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+	margin-top: 8.4rem;
+	max-width: 50%;
+}
+
+
+header.journal-posts{
+	padding-bottom: 20px;
+}
+div.metadata{
+	position: absolute;
+    bottom: -24px;
+    display: inline-block;
+    background-color: #248a83;
+    padding: 10px;
+    right: 330px;
+}
+
+.journal-posts p{
+	width:700px;
+}
+
+.wp-post-image{
+	max-width: 100%;
+    height: 200px;
+}
+.journal-button{
+	color: black;
+	border: 1px solid;
+	padding: 0.75rem;
+	text-decoration: none;
+}
+.page-template {
+   nav {
+           menu-item a {
+               color: blue;
+           }
+       }
+   }
+
+/*Journal single page*/
+
+.post-template-default{ 
+	.site-content{
+		display: flex;
+    	}
+}
+
+h1.entry-title{
+	position: absolute;
+	font-size: 2.1rem;
+	color: white;
+	background-color: #248a83;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+	margin-top: 2.1rem;
+	max-width: 50%;
+}
+
+div.entry-meta{
+	position: absolute;
+    bottom: -59px;
+    display: inline-block;
+    background-color: #248a83;
+    padding: 10px;
+    right: 279px;
+}
+
+/* Product Single Page */
+
+header.entry-header{
+	display: flex;
+}
+div.product-content{
+	
+    justify-items: center;
+	width: 50%;
+    padding-left: 16px;
+}
+    
+h1.product-entry-title{
+	color: #d99054
+}     
+
+.product-content p{ 
+    width:90%;
+    font-size: large;
+    }
+
+    /* Product Category */
+
+div.product-blocks {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.products-wrapper{
+	border: 1px solid #e1e1e1;
+	margin-left: 6px;
+}
+
+/* About us Page*/
+
+section.about{
+	height: 100vh;
+	background: url(../../images/product-photos/gas-stove.jpg);
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+div.about-info{
+	max-width: 800px;
+    margin: 3rem auto;
+}
+
+.about-info h2{
+	text-align: center;
+}
+
+/* Find Us */
+div.find-us{
+	padding-left: 60px;
+}
+div.find-us-article{
+	display: grid;
+    grid-template-columns: 60% 30%;
+    padding-top: 85px;
+}
+main#find-content{
+	display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    font-size: 20px;
+}
+
+
+/* Taxonomy Page */
+
+header.product-type{
+	padding-top: 70px;
+	border-bottom: 1px dashed #c8c8c8;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.product-blocks img{
+	max-height: 250px;
+	width: auto;
+}
+
+/* 404 page */
+
+section.error-404 {
+	display: grid;
+    grid-template-columns: 70% 30%;
+	padding-top: 80px;
+    padding-left: 37px;
+}
+div.widget h2{
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 40px;
+}
+div.widget ul{
+	list-style-type: none;
+}
+div.widget a{
+	color: #248a83;
+}
+
